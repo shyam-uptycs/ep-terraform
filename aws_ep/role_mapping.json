@@ -1,0 +1,31 @@
+{
+    "roles": [
+        {
+            "Role1":{
+                "name": ["EpRole1"],
+                "policies": {
+                    "IP": ["EP-Policy1"],
+                    "PB": ["EP-Policy2"]
+                }
+            },
+            "Role2": {
+                "name": "EpRole2",
+                "policies": {
+                    "IP": ["EP-Policy1"],
+                    "PB": ["EP-Policy3"]
+                }
+            },
+            "Role3": {
+                "name": "EpRole3",
+                "policies": {
+                    "IP": [
+                        "EP-Policy1"
+                    ],
+                    "PB": [
+                        "EP-Policy3"
+                    ]
+                }
+            }
+        }
+    ]
+}

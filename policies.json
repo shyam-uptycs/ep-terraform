@@ -1,0 +1,20 @@
+{
+    "Policies": {
+        "P1": {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "ec2:*"
+            ],
+            "Resource": "*"
+        },
+        "P2": {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "ec2:*"
+            ],
+            "Resource": "*"
+        }
+    }
+}

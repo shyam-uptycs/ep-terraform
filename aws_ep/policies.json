@@ -1,0 +1,134 @@
+{
+    "Policies": {
+        "EPPolicy1": {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "*"
+        },
+        "EPPolicy2": {
+            "Effect": "Deny",
+            "Action": "*",
+            "Resource": "*"
+        },
+        "EPPolicy3": {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "arn:aws:s3:::test*"
+        },
+        "EPPolicy4": {
+            "Effect": "Deny",
+            "Action": "*",
+            "Resource": "arn:aws:s3:::test*"
+        },
+        "EPPolicy5": {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "arn:aws:s3:::ad-test-delete"
+        },
+        "EPPolicy6": {
+            "Effect": "Deny",
+            "Action": "*",
+            "Resource": "arn:aws:s3:::ad-test-delete"
+        },
+        "EPPolicy7": {
+            "Effect": "Allow",
+            "Action": ["s3:*List*"],
+            "Resource": "*"
+        },
+        "EPPolicy8": {
+            "Effect": "Deny",
+            "Action": ["s3:*List*"],
+            "Resource": "*"
+        },
+        "EPPolicy9": {
+            "Effect": "Allow",
+            "Action": ["s3:*List*"],
+            "Resource": "arn:aws:s3:::ad-test-delete"
+        },
+        "EPPolicy10": {
+            "Effect": "Deny",
+            "Action": ["s3:*List*"],
+            "Resource": "arn:aws:s3:::ad-test-delete"
+        },
+        "EPPolicy11": {
+            "Effect": "Allow",
+            "Action": ["s3:*Bucket*"],
+            "Resource": "*"
+        },
+        "EPPolicy12": {
+            "Effect": "Deny",
+            "Action": ["s3:*Bucket*"],
+            "Resource": "*"
+        },
+        "EPPolicy13": {
+            "Effect": "Allow",
+            "NotAction": "*",
+            "Resource": "*"
+        },
+        "EPPolicy14": {
+            "Effect": "Deny",
+            "NotAction": "*",
+            "Resource": "*"
+        },
+        "EPPolicy15": {
+            "Effect": "Allow",
+            "NotAction": "s3:*List*",
+            "Resource": "arn:aws:s3:::test*"
+        },
+        "EPPolicy16": {
+            "Effect": "Deny",
+            "NotAction": "s3:*List*",
+            "Resource": "arn:aws:s3:::test*"
+        },
+        "EPPolicy17": {
+            "Effect": "Allow",
+            "Action": "*",
+            "NotResource": "arn:aws:s3:::ad-test-delete"
+        },
+        "EPPolicy18": {
+            "Effect": "Deny",
+            "Action": "*",
+            "NotResource": "arn:aws:s3:::ad-test-delete"
+        },
+        "EPPolicy19": {
+            "Effect": "Allow",
+            "Action": "s3:*List*",
+            "NotResource": "arn:aws:s3:::test*"
+        },
+        "EPPolicy20": {
+            "Effect": "Deny",
+            "Action": "s3:*List*",
+            "NotResource": "arn:aws:s3:::test*"
+        },
+        "EPPolicy21": {
+            "Effect": "Allow",
+            "NotAction": "s3:*List*",
+            "NotResource": "arn:aws:s3:::test*"
+        },
+        "EPPolicy22": {
+            "Effect": "Deny",
+            "NotAction": "s3:*List*",
+            "NotResource": "arn:aws:s3:::test*"
+        },
+        "EPPolicy31": {
+            "Effect": "Allow",
+            "NotAction": "iam:*",
+            "Resource": "*",
+            "Condition": {
+                "BoolIfExists": {
+                    "aws:MultiFactorAuthPresent": "false"
+                }
+            }
+        },
+        "EPPolicy32": {
+            "Effect": "Deny",
+            "NotAction": "iam:*",
+            "Resource": "*",
+            "Condition": {
+                "BoolIfExists": {
+                    "aws:MultiFactorAuthPresent": "false"
+                }
+            }
+        }
+    }
+}
